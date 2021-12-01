@@ -54,9 +54,13 @@ namespace OOP_Concept
             
             Customer C = new Customer("Ramesh", "xyz@gmail.com");
 
+            //downcasting
             User C2 = new Customer("Suresh", "mno@gmail.com");
-
             User A2 = new Admin("Jay", "ijk@gmail.com");
+
+            //upcasting not allowed
+            //Customer c3 = new User();
+            //Admin A3 = new User();
 
             Console.ReadLine();
 
