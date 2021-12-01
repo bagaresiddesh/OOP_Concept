@@ -8,12 +8,17 @@ namespace OOP_Concept
         private string password { get; set; }
         public void VerifyLogin()
         {
-            
-        }       
+
+        }
     }
 
-    public class Customer:User
+    public class Customer : User
     {
+        public Customer(string name, string mail)
+        {
+            this.customerName = name;
+            this.cMail = mail;
+        }
         public string customerName { get; set; }
         public string cMail { get; set; }
         private string cardNo { get; set; }
@@ -26,9 +31,9 @@ namespace OOP_Concept
         }
     }
 
-    public class Admin:User
+    public class Admin : User
     {
-        public Admin(string name,string mail)
+        public Admin(string name, string mail)
         {
             this.adminName = name;
             this.aMail = mail;
@@ -43,11 +48,19 @@ namespace OOP_Concept
     }
     public class Program
     {
-        public static void main()
+        public static void Main()
         {
-            Admin Ad = new Admin("rahul","abc@gmail.com");
-
+            Admin A = new Admin("Rahul", "abc@gmail.com");
             
+            Customer C = new Customer("Ramesh", "xyz@gmail.com");
+
+            User C2 = new Customer("Suresh", "mno@gmail.com");
+
+            User A2 = new Admin("Jay", "ijk@gmail.com");
+
+            Console.ReadLine();
+
         }
     }
 }
+
