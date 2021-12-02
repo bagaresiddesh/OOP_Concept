@@ -4,8 +4,8 @@ namespace OOP_Concept
 {
     public class User
     {
-        private int userId { get; set; }
-        private string password { get; set; }
+        private int Id { get; set; }
+        private string Password { get; set; }
         public void VerifyLogin()
         {
 
@@ -16,18 +16,18 @@ namespace OOP_Concept
     {
         public Customer(string name, string mail)
         {
-            this.customerName = name;
-            this.cMail = mail;
+            this.Name = name;
+            this.Mail = mail;
         }
-        public string customerName { get; set; }
-        public string cMail { get; set; }
-        private string cardNo { get; set; }
+        public string Name { get; set; }
+        public string Mail { get; set; }
+        private string CardNo { get; set; }
 
         public void DisplayDetails()
         {
             Console.WriteLine("Customer Details");
-            Console.WriteLine("Customer Name : ", this.customerName);
-            Console.WriteLine("Customer Mail : ", this.cMail);
+            Console.WriteLine("Customer Name : ", this.Name);
+            Console.WriteLine("Customer Mail : ", this.Mail);
         }
     }
 
@@ -35,11 +35,11 @@ namespace OOP_Concept
     {
         public Admin(string name, string mail)
         {
-            this.adminName = name;
-            this.aMail = mail;
+            this.Name = name;
+            this.Mail = mail;
         }
-        public string adminName { get; set; }
-        public string aMail { get; set; }
+        public string Name { get; set; }
+        public string Mail { get; set; }
 
         public void UpdateCatlog()
         {
